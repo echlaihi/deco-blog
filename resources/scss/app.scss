@@ -1,0 +1,18 @@
+@import 'scss/variables';
+@import 'scss/reset';
+@import 'scss/mixins';
+@import 'scss/layout';
+// import the styling for each sections
+@import 'scss/sections/header';
+@import 'scss/sections/nav';
+@import 'scss/sections/banner';
+@import 'scss/sections/registration';
+@import 'scss/sections/contact';
+@import 'scss/sections/_footer';
+@import 'scss/sections/aside';
+@import 'scss/sections/article';
+@import 'scss/forms/contactForm';
+@import 'scss/forms/searchForm';
+@import 'scss/forms/authForm';
+@import 'scss/sections/dashboardPosts';
+@import 'scss/404';

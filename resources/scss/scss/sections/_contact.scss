@@ -1,0 +1,40 @@
+.contact-section {
+    // border: 1px solid red;
+    color: $dark_gray;
+    .contact-information {
+        background-color: $waite;
+        display: flex;
+        flex-wrap: wrap;
+        .contact-text {
+            width: 58%;
+            @include sm {
+                width: 98%;
+            }
+            margin: 1%;
+        }
+        h3 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid $light_normal_gray;
+            width: fit-content;
+            padding: calc(27rem/16) calc(92rem/16) calc(27rem/16) 0;
+        }
+        p {
+            padding: .8rem 0;
+            font-size: 1rem;
+        }
+        address {
+            &:nth-child(1) {
+                padding-top: 0;
+            }
+            padding: .3rem 0;
+        }
+        .contact-map {
+            height: 15rem;
+            width: 40%;
+            @include sm {
+                width: 100%;
+            }
+            background-color: rgb(95, 95, 102);
+        }
+    }
+}

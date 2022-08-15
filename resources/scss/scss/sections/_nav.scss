@@ -1,0 +1,38 @@
+nav {
+    position: fixed;
+    z-index: 100;
+    color: wheat;
+    width: 40%;
+    @include sm {
+        width: 90%;
+    }
+    @include xs {
+        width: 100%;
+    }
+    height: 92vh;
+    background-color: $dark_gray;
+    color: $waite;
+    top: 2.7rem;
+    left: -1%;
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        li {
+            a {
+                display: block;
+                padding: 1rem .5rem 1rem 5rem;
+                font-size: 1.2rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+nav.active {
+    transform: translateX(0%);
+}

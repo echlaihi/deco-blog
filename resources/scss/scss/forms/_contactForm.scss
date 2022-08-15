@@ -1,0 +1,42 @@
+#contact-form {
+    input,
+    textarea {
+        padding: 1rem;
+        background-color: $waite;
+        border: none;
+        text-transform: uppercase;
+    }
+    .contact-form-group:nth-child(2) {
+        margin-top: 1rem;
+    }
+    textarea {
+        margin: 1rem 0;
+    }
+    .contact-form-group {
+        width: 100%;
+    }
+    .contact-form-group:nth-child(1) {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        input {
+            width: 49%;
+            @include sm {
+                width: 100%;
+            }
+        }
+        input:nth-child(1) {
+            margin-right: 2%;
+            @include sm {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    #send {
+        width: fit-content;
+        font-weight: bold;
+        color: $waite;
+        background-color: $dark_gray;
+    }
+}

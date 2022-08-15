@@ -1,0 +1,26 @@
+#search-form {
+    display: flex;
+    margin: .2rem 0 2rem 0;
+    input,
+    button {
+        padding: 1rem;
+    }
+    input {
+        width: 78%;
+        background-color: $light_gray;
+    }
+    button {
+        display: block;
+        width: 22%;
+        background-color: $dark_gray;
+
+        i{
+            display: block;
+            color: $waite;
+            font-size: 1.3rem;
+        }
+
+        
+    }
+
+}

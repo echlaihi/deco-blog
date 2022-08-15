@@ -1,0 +1,108 @@
+footer {
+    background-color: $main_gray;
+    color: $waite;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    letter-spacing: .2rem;
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #signature {
+        margin-top: .5rem;
+        width: 100%;
+        height: 10rem;
+        background-color: $middle_gray;
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        p {
+            font-size: 1.1rem;
+            padding: 2rem 1rem;
+            transform: rotate(-15deg);
+        }
+    }
+    .col {
+        width: 24%;
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 4rem;
+            font-size: .9rem;
+        }
+        @include lg {
+            width: 48%;
+        }
+        @include sm {
+            width: 98%;
+            padding: 0 1%;
+            &:nth-child(3) {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    .tweet {
+        &:nth-child(1) {
+            margin-bottom: 1rem;
+            @include lg {
+                margin-bottom: 2.5rem;
+                margin-top: 1.8rem;
+            }
+        }
+        .email {
+            display: block;
+            font-size: .8rem;
+            margin-bottom: .4rem;
+            @include lg {
+                font-size: .9rem;
+            }
+        }
+        p {
+            display: block;
+            padding: 0 .2rem;
+        }
+    }
+    .wrapper {
+        display: flex;
+        padding: calc(45rem/16) 1%;
+        color: $lighten_gray;
+        h3 {
+            text-transform: uppercase;
+            font-size: .9rem;
+            line-height: 1.5rem;
+            padding-bottom: 1.3rem;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .img {
+            display: block;
+            height: calc(90rem/16);
+            width: calc(100%/3.1);
+            background-color: $light_gray;
+            margin: .05rem;
+        }
+    }
+    .comment-box {
+        padding-bottom: 1.4rem;
+        &:nth-of-type(odd) {
+            border-bottom: 1px solid $light_gray;
+            margin-bottom: 1.4rem;
+        }
+        .commentor {
+            display: block;
+            padding-bottom: .3rem;
+        }
+    }
+    #lower-footer {
+        background-color: $dark_gray;
+        text-align: center;
+        padding: .8rem;
+        text-transform: uppercase;
+        color: $middle_gray;
+        @include sm {
+            font-size: .7rem;
+        }
+    }
+}

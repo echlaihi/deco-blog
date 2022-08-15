@@ -1,0 +1,77 @@
+header {
+    height: calc(337rem/16);
+    background-color: $main_gray;
+    display: flex;
+    justify-content: center;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: .7rem;
+        padding-bottom: .3rem;
+        padding-left: 2%;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        margin-left: auto;
+        background-color: inherit;
+        width: 100%;
+
+    }
+}
+
+.logo-container {
+    letter-spacing: .3rem;
+    color: $waite;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    .logo {
+        display: inline-block;
+    }
+    span#top {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-top: 3px $waite solid;
+        border-bottom: 3px $waite solid;
+        margin-right: .2rem;
+        margin-left: .08rem;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: start;
+        border-radius: 4%;
+        span {
+            width: 1rem;
+            height: 2.7px;
+            background-color: $waite;
+            position: absolute;
+            border-radius: 4%;
+        }
+    }
+}
+
+#blog {
+    font-size: 1.5rem;
+}
+
+#toggler-icon {
+    margin-top: .2rem;
+    display: block;
+    width: 1.8rem;
+    height: 1.2rem;
+    border-top: 3px $waite solid;
+    border-bottom: 3px $waite solid;
+    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    #inner-line {
+        display: inline-block;
+        width: inherit;
+        height: 3px;
+        background-color: $waite;
+        border-radius: 8%;
+    }
+}

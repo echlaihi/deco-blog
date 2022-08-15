@@ -1,0 +1,79 @@
+#registration {
+    background-color: $light_gray;
+    .wrapper {
+        margin-bottom: 1rem;
+        margin-top: 1rem    ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        line-height: 1.5rem;
+        letter-spacing: .2rem;
+    }
+    h3 {
+        text-transform: uppercase;
+        color: dark;
+        width: 15%;
+    }
+    form {
+        width: 82%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    input {
+        padding: 1rem;
+        text-transform: uppercase;
+        width: 35%;
+        border: none;
+        background-color: $waite;
+    }
+    button {
+        padding: 1rem;
+        text-transform: uppercase;
+        color: $waite;
+        background-color: $main_gray;
+        width: 20%;
+        border: none;
+    }
+    @include lg {
+        font-size: .6rem;
+        h3 {
+            font-size: 1rem;
+        }
+        button {
+            font-size: .6rem;
+        }
+    }
+    @include sm {
+        flex-direction: column;
+        font-size: .7rem;
+        h3 {
+            width: 100%;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        form {
+            width: 100%;
+            input,
+            button {
+                padding: .9rem;
+                width: 33%;
+                margin-top: 1rem !important;
+            }
+            button {
+                width: 30%;
+            }
+        }
+    }
+    @include xs {
+        form {
+            input,
+            button {
+                width: 98%;
+                display: block;
+                margin: .2rem;
+            }
+        }
+    }
+}

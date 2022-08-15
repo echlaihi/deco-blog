@@ -1,0 +1,90 @@
+#posts-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.posts-col {
+    width: 32%;
+    @include sm {
+        width: 49%;
+    }
+    @include xs {
+        width: 98%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+.post-card {
+    position: relative;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-top: 1.7rem;
+    background-color: $waite;
+    h5.post-title {
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 1rem .5rem;
+    }
+    .read-more {
+        display: inline-block;
+        width: 126rem/16;
+        padding: .4rem .8rem;
+        margin: 1rem 0;
+        border-right: 1px solid $normal_gray;
+        border-left: 1px solid $normal_gray;
+    }
+    .comments {
+        display: none;
+    }
+    .post-category {
+        margin-top: .7rem;
+        color: $normal_gray;
+    }
+    .date {
+        font-size: .8rem;
+        color: $normal_gray;
+    }
+    .post-body {
+        padding: .6rem;
+    }
+    .img {
+        display: block;
+        height: 10rem;
+        width: 100%;
+    }
+    .post-control {
+        width: 3rem;
+        height: 2.5
+        rem;
+        position: absolute;
+        left: 40%;
+        top: -1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        i{
+            font-size: 1.2rem;
+            border-radius: 50%; 
+            padding: .2rem;
+            border-width: 2px;
+            border-style: solid;
+
+
+          &.fa-trash-can{
+            color: red;
+            border-color: red;
+            margin-left: 3px;
+          }
+
+          &.fa-pen{
+            color: green;
+            border-color: green;
+          }
+            
+                     
+        }
+    }
+}

@@ -1,0 +1,54 @@
+h1 {
+    font-size: 2rem;
+}
+
+#auth-section {
+    border: 2px solid $middle_gray;
+    padding: 1rem;
+    max-width: calc(499rem/16);
+    margin: 1rem;
+}
+
+#createForm,
+#loginForm,
+#registerForm,
+#resetPasswordForm,
+#editProfileForm,
+#updatePasswordForm,
+#editForm {
+    width: 100%;
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    input[type="submit"] {
+        text-align: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        width: fit-content;
+        background-color: $dark_gray;
+        color: $waite;
+    }
+    margin-bottom: 1rem;
+}
+
+.alert {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.alert-danger {
+    color: darkred;
+    background-color: lightcoral;
+}
+
+.alert-success {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    background-color: lightgreen;
+    color: darkgreen;
+}
